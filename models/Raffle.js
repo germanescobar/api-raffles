@@ -23,5 +23,5 @@ const rafflesSchema = mongoose.Schema({
   },
 });
 
-const Raffle = mongoose.model("Raffles", rafflesSchema);
+const Raffle = mongoose.model("Raffle", rafflesSchema);
 module.exports = Raffle;

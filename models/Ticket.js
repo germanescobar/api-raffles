@@ -14,13 +14,13 @@ const ticketSchema = mongoose.Schema({
     name: { type: String, default: "" },
     phone: { type: String, default: "" },
   },
-  raffleId: {
+  raffle: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "raffles",
+    ref: "Raffle",
     required: true,
   },
 });
 
-const Ticket = mongoose.model("Tickets", ticketSchema);
+const Ticket = mongoose.model("Ticket", ticketSchema);
 
 module.exports = Ticket;

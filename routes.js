@@ -3,7 +3,7 @@ const controller = require("./controllers");
 
 const app = express.Router();
 
-app.post("/raffle", controller.createRaffle);
+app.post("/raffles", controller.createRaffle);
 app.get("/raffles", controller.listRaffles);
 app.get("/raffles/:id", controller.getRaffle);
 app.post("/raffles/:raffleId/tickets", controller.buyTicket);
